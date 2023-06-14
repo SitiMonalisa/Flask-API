@@ -13,9 +13,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Menyalin kode aplikasi ke working directory
 COPY . .
 
-ENV HOST 0.0.0.0
-
-EXPOSE 8080
-
 # Menjalankan aplikasi Flask
 CMD ["python", "main.py"]
